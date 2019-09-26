@@ -5,7 +5,7 @@
 <h2>Create Object from JSON String</h2>
 
 <p id="demo"></p>
-
+<p id="demo2"></p>
 <script>
 var text = '{"employees":[' +
 '{"firstName":"John","lastName":"Doe" },' +
@@ -13,7 +13,8 @@ var text = '{"employees":[' +
 '{"firstName":"Peter","lastName":"Jones" }]}';
 /*same as:
 var text = '{"employees":[{"firstName":"John","lastName":"Doe" },{"firstName":"Anna","lastName":"Smith" },{"firstName":"Peter","lastName":"Jones" }]}';*/
-
+//start with'{ finish with }'
+  
 var test = '{\
   "userId": 1,\
   "id": 1,\
@@ -26,6 +27,18 @@ obj2 = JSON.parse(test);
 document.getElementById("demo").innerHTML =
 obj.employees[1].firstName + " " + obj2.userId;
 </script>
-
+//request from JSONPlaceholder
+<script>
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    document.getElementById("demo2").innerHTML = myObj.title;
+  }
+};
+xmlhttp.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
+xmlhttp.send();
+</script>  
+  
 </body>
 </html>
