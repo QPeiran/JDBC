@@ -24,7 +24,7 @@ exports.csv2sheet = async (data, context) => {
   const sheetId = await addEmptySheet(sheetsAPI, sheetName);
   console.log("the sheetId is: " + sheetId + ".     ");
   const theData = await readCSVContent(sheetsAPI, data, sheetName);
-  console.log("the sheetId is: " + theData + ".     ");
+  console.log("the Data Content is: " + theData + ".     ");
   await populateAndStyle(sheetsAPI, theData, sheetId);
 };
 
