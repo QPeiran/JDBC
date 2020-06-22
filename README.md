@@ -60,7 +60,7 @@ linking spreadsheet to Google Cloud SQL &amp; APIs
     },
     {
         "name": "Pickers_Count",
-        "type": "STRING",
+        "type": "INTEGER",
         "mode": "NULLABLE"
     },
     {
