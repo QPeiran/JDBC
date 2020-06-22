@@ -20,43 +20,52 @@ linking spreadsheet to Google Cloud SQL &amp; APIs
     },
     {
         "name": "Seq_Code",
-        "type": "STRING"
+        "type": "STRING",
+        "mode": "NULLABLE"
     },
     {
         "name": "Recipe_Name",
-        "type": "STRING"
+        "type": "STRING",
+        "mode": "NULLABLE"
     },
     {
         "name": "Break_Reasons",
-        "type": "STRING"
+        "type": "STRING",
+        "mode": "NULLABLE"
     },
     {
         "name": "Missing_Ingredients",
-        "type": "STRING"
+        "type": "STRING",
+        "mode": "NULLABLE"
     },
     {
         "name": "Kitting_Line",
-        "type": "STRING"
+        "type": "STRING",
+        "mode": "NULLABLE"
     },
     {
         "name": "Assembly_Batch",
-        "type": "STRING"
+        "type": "STRING",
+        "mode": "NULLABLE"
     },
     {
         "name": "Event_Shift",
-        "type": "STRING"
+        "type": "STRING",
+        "mode": "NULLABLE"
     },
     {
         "name": "Team_Leader",
-        "type": "STRING"
+        "type": "STRING",
+        "mode": "NULLABLE"
     },
     {
         "name": "Pickers_Count",
-        "type": "STRING"
+        "type": "STRING",
+        "mode": "NULLABLE"
     },
     {
         "name": "Time_Consumption",
-        "type": "STRING",
+        "type": "FLOAT",
         "mode": "REQUIRED"
     }
 ]
